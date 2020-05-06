@@ -1,0 +1,9 @@
+spring:
+  data-source:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://101.132.134.161:3306/lizhen_inner_test?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    data-username: root
+    password: Lizhensfroot
+jasypt:
+  encryptor:
+    password=CodeSheep: CodeSheep

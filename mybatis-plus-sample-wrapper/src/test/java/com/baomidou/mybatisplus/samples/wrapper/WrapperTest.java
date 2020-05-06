@@ -73,7 +73,7 @@ public class WrapperTest {
     }
 
     @Test
-    public void lambdaQueryWrapper(){
+    public void lambdaquerywrapper(){
         System.out.println("----- 普通查询 ------");
         List<User> plainUsers = userMapper.selectList(new LambdaQueryWrapper<User>().eq(User::getRoleId, 2L));
         List<User> lambdaUsers = userMapper.selectList(new QueryWrapper<User>().lambda().eq(User::getRoleId, 2L));

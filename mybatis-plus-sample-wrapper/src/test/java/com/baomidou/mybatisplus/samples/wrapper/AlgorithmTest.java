@@ -1,9 +1,11 @@
 package com.baomidou.mybatisplus.samples.wrapper;
 
+import com.baomidou.mybatisplus.samples.wrapper.Entity.Writer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import xyz.downgoon.snowflake.Snowflake;
 
 /**
  * @description: 算法相关代码
@@ -138,5 +140,41 @@ public class AlgorithmTest {
         return str.toString().replaceAll("","%20");
 
     }
+
+    @Test
+    public void testSnowFlake(){
+//        long s=-1L ^ (-1L << 5);
+//        System.out.println(s);
+//        int a=20;
+//        modifyInt(a);
+//        System.out.println(a);
+//        String str="lc";
+//        modifyString(str);
+//        System.out.println(str);
+        Writer a = new Writer(18);
+        Writer b = new Writer(18);
+        modify(a, b);
+
+        System.out.println(a.getAge());
+        System.out.println(b.getAge());
+
+    }
+
+    public void modifyInt(int value){
+        value=10;
+    }
+
+    public void modifyString (String value){
+        value="wangyz";
+    }
+    private static void modify(Writer a1, Writer b1) {
+        a1.setAge(30);
+
+        b1 = new Writer(18);
+        b1.setAge(30);
+    }
+
+
+
 
 }

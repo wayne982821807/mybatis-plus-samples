@@ -36,6 +36,21 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/net.snowflake/snowflake-jdbc -->
+        <!-- https://mvnrepository.com/artifact/xyz.downgoon/snowflake -->
+        <dependency>
+            <groupId>xyz.downgoon</groupId>
+            <artifactId>snowflake</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!--图片验证码-->
+        <dependency>
+            <groupId>com.github.botaruibo</groupId>
+            <artifactId>xvcode</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
